@@ -7,7 +7,7 @@
 
 ---
 
-## 📌 Project Overview
+## * Project Overview
 * **Project Name**: Azure Virtual Desktop Pooled Host Pool for an Engineering Lab
 * **Repository ID**: `2400031215-Azure`
 * **Student Name**: Bhimavarapu Hema Varshith Reddy (ID: `2400031215`)
@@ -19,7 +19,7 @@ This repository documents the end-to-end design, implementation, and empirical t
 
 ---
 
-## 📂 Repository Deliverables
+## * Repository Deliverables
 
 ```text
 ├── Azure_Virtual_Desktop_abstract.pdf                # Project abstract & problem statement
@@ -47,7 +47,7 @@ This repository documents the end-to-end design, implementation, and empirical t
 
 ---
 
-## 🏛️ System Architecture
+## * System Architecture
 
 ```mermaid
 flowchart TD
@@ -71,7 +71,7 @@ flowchart TD
 
 ---
 
-## 🛠️ Faculty Practical Tasks Coverage
+## * Faculty Practical Tasks Coverage
 
 * **Task 1: Resource Group & Managed Disks** → Implemented in `rg-avd-engineering-lab` with 128 GB Standard SSD managed OS disk.
 * **Task 2: Microsoft Entra Users & Groups** → Created security group `AVD-Engineering-Lab-Students` and assigned `Desktop Virtualization User` role.
@@ -81,7 +81,7 @@ flowchart TD
 
 ---
 
-## 🔒 Security & Cost Governance
+## * Security & Cost Governance
 * **Reverse Connect Architecture**: Zero inbound ports exposed from the internet to the session host.
 * **Auto-Shutdown Schedule**: DevTestLabs automated daily shutdown enforced at 18:00 UTC (23:30 IST) to preserve student credits.
 * **Single Host Staging**: Only one initial VM (`Standard_B4ms` / `Standard_D4s_v4`) used for empirical testing before scale-out calculations.
