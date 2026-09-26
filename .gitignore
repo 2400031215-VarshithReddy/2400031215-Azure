@@ -1,0 +1,11 @@
+# ARM / Bicep build artifacts
+*.json
+!bicep/*.json
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Temp files
+*.tmp
+*.log

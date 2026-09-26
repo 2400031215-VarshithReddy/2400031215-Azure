@@ -19,25 +19,30 @@ This repository documents the end-to-end design, implementation, and empirical t
 
 ---
 
-## 📂 Repository Structure
+## 📂 Repository Deliverables
 
 ```text
-├── docs/
-│   ├── 01_PROJECT_ABSTRACT.md                    # Project abstract, problem statement & objectives
-│   ├── 02_PROJECT_REQUIREMENTS.md                # Technical requirements & Faculty Task mapping matrix
-│   ├── 03_SYSTEM_ARCHITECTURE.md                 # System architecture diagrams & component breakdown
-│   ├── 04_AVD_ACCESS_AND_APPLICATION_DELIVERY.md # Application delivery & gateway architecture
-│   └── 05_LIVE_DEPLOYMENT_STATUS.md              # Live Azure resource IDs & configuration status
-├── bicep/
-│   ├── main.bicep                                # Orchestrator Bicep template
-│   ├── main.bicepparam                           # Parameter file for deployment
+├── Azure_Virtual_Desktop_abstract.pdf                # Project abstract & problem statement
+├── azure project requirements.pdf                    # Faculty practical tasks 1-5 requirements
+├── Azure_Virtual_Desktop_Architecture.pdf            # Multi-tier cloud architecture blueprint
+├── Azure_Virtual_Desktop_Pooled_Host_Pool_Lab ppt.pdf# Project presentation slide deck
+├── azure project Azure Virtual Desktop.pdf           # Comprehensive final project report
+├── README.md                                         # Main repository guide
+├── bicep/                                            # Modular Infrastructure-as-Code
+│   ├── main.bicep                                    # Orchestrator Bicep template
+│   ├── main.bicepparam                               # Deployment parameters
 │   └── modules/
-│       ├── avd-control-plane.bicep               # Host Pool, App Group, Workspace module
-│       ├── network.bicep                         # Network Security Group module
-│       └── session-host.bicep                    # Session Host VM with Entra Join & Auto-Shutdown
-├── scripts/
-│   └── fslogix-config.ps1                        # Automation script for FSLogix registry configuration
-└── README.md                                     # Main repository guide
+│       ├── avd-control-plane.bicep                   # Host Pool, App Group, Workspace
+│       ├── network.bicep                             # Network Security Group
+│       └── session-host.bicep                        # Session Host VM with Entra Join
+├── docs/                                             # Technical source documentation
+│   ├── 01_PROJECT_ABSTRACT.md
+│   ├── 02_PROJECT_REQUIREMENTS.md
+│   ├── 03_SYSTEM_ARCHITECTURE.md
+│   ├── 04_AVD_ACCESS_AND_APPLICATION_DELIVERY.md
+│   └── 05_LIVE_DEPLOYMENT_STATUS.md
+└── scripts/
+    └── fslogix-config.ps1                            # FSLogix profile container configuration
 ```
 
 ---
